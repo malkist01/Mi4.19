@@ -32,7 +32,7 @@ MERGE="$ROOTDIR/scripts/kconfig/merge_config.sh"
 export PATH="$ROOTDIR/clang-zyc/bin:$PATH"
 
 # ================= INFO =================
-KERNEL_NAME="ReLIFE"
+KERNEL_NAME="Mi Kernel"
 DEVICE="Mi8937"
 
 # =============== DATE (WIB) ===============
@@ -56,7 +56,7 @@ ZIP_NAME=""
 clone_anykernel() {
     if [ ! -d "$ANYKERNEL_DIR" ]; then
         echo -e "$yellow[+] Cloning AnyKernel3...$white"
-        git clone https://github.com/rahmatsobrian/AnyKernel3.git "$ANYKERNEL_DIR" || exit 1
+        git clone https://github.com/malkist01/AnyKernel2.git -b Mi8937  "$ANYKERNEL_DIR" || exit 1
     fi
 }
 
